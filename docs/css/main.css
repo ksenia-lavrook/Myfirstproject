@@ -1,0 +1,439 @@
+/*
+ * Box-sizing-model
+ */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*
+ * Responsive images
+*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*
+ * Cursor change on hover on Buttons
+*/
+input[type="submit"] {
+  cursor: pointer;
+}
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+  resize: vertical;
+}
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.clearfix:after {
+  clear: both;
+}
+.clear {
+  clear: both;
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+.header {
+  position: relative;
+  height: 100%;
+}
+.header__content {
+  height: 100%;
+}
+.header__info {
+  position: absolute;
+  height: 60px;
+  width: 100%;
+  top: 0px;
+  background: rgba(0, 0, 0, 0.149);
+}
+.header__logo {
+  display: inline-block;
+  margin-right: 355px;
+  margin-left: 160px;
+  height: 60px;
+  color: #FFF;
+}
+.header__logo-headline {
+  font-family: 'Lobster', cursive;
+  font-size: 24px;
+}
+.header__navigation {
+  position: absolute;
+  display: inline-block;
+  padding-top: 23px;
+  height: 60px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+}
+ul.header__navigation-list > li {
+  margin: 0;
+  padding: 0;
+  display: inline;
+  text-decoration: none;
+  margin-right: 45px;
+  list-style: none;
+}
+ul.header__navigation-list > li:last-child {
+  margin-right: 0;
+}
+ul.header__navigation-list > li a {
+  color: #FFF;
+}
+ul.header__navigation-list > li a:hover {
+  line-height: 15px;
+  color: #FFF;
+  height: 3px;
+}
+.header__description {
+  position: absolute;
+  margin-top: 260px;
+  margin-left: 350px;
+  width: 670px;
+  height: 280px;
+}
+.header__description p {
+  color: #FFF;
+  font-size: 48px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 35px;
+}
+.search-box {
+  width: 450px;
+  height: 100px;
+  position: relative;
+}
+.input {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  box-sizing: border-box;
+  width: 0px;
+  height: 63px;
+  padding: 0 20px;
+  outline: none;
+  font-size: 18px;
+  border-radius: 50px;
+  color: #29313a;
+  border: 3px solid #f76f8d;
+  transition: all 0.8s ease;
+}
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #f76f8d;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #f76f8d;
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #f76f8d;
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #f76f8d;
+}
+.btn {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: #f76f8d;
+  border-radius: 50%;
+  right: 45px;
+  top: 10px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 70px;
+  font-size: 30px;
+  color: #fff;
+  transition: all 0.8s ease;
+}
+.input.active {
+  width: 350px;
+  right: 100px;
+}
+.btn.animate {
+  transform: rotate(-360deg);
+  right: 100px;
+}
+.options {
+  background: #fdf8f9;
+  width: 100%;
+  height: 1150px;
+  position: relative;
+}
+.options__fhoto {
+  padding-bottom: 30px;
+}
+.options__fhoto img {
+  box-shadow: 7.5px 12.99px 15px 0px rgba(189, 10, 170, 0.15);
+}
+.options__fhoto-country {
+  width: 1046px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.option__headline {
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.options__button {
+  position: absolute;
+  left: 43%;
+  margin-top: -25px;
+  width: 250px;
+  height: 50px;
+  background-color: #f76f8d;
+  color: #FFF;
+  box-shadow: 0px 0px 30px 0px rgba(247, 111, 141, 0.1);
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-border-radius: 60px;
+  border-radius: 60px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.options__button a {
+  color: #FFF;
+  text-decoration: none;
+}
+.fhoto {
+  height: 330px;
+  margin-bottom: 25px;
+  box-shadow: 7.5px 12.99px 15px 0px rgba(189, 10, 170, 0.15);
+}
+.fhoto:hover {
+  overflow: hidden;
+  background: blue;
+}
+.description {
+  height: 1050px;
+  padding-top: 100px;
+  position: relative;
+}
+.description-headline {
+  width: 670px;
+  margin: auto;
+  text-align: center;
+}
+.description-headline h1 {
+  color: #333;
+  font-size: 30px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  padding-bottom: 18px;
+}
+.description-headline p {
+  color: #CCC;
+  font-size: 18px;
+  padding-bottom: 55px;
+}
+.description-headline li {
+  list-style-type: none;
+  display: inline-block;
+}
+.description-headline li a {
+  color: #CCC;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  padding-left: 60px;
+}
+.description-headline li a:hover {
+  padding: 10px 29px 13px;
+  color: #f993a9;
+  border: 2px solid #fff;
+  width: 195px;
+  height: 20px;
+  box-shadow: 0px 0px 20px 0px #f76f8d;
+  -webkit-border-radius: 60px;
+  border-radius: 60px;
+}
+.description-hotels {
+  width: 965px;
+  margin: auto;
+  margin-top: 60px;
+}
+.description-hotels__text {
+  height: 190px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+.description-hotels__text-hotel {
+  font-size: 16px;
+  font-weight: bold;
+  color: #777;
+  padding-bottom: 10px;
+}
+.description-hotels__text-orang {
+  font-size: 14px;
+  color: #999999;
+  padding-bottom: 30px;
+}
+.description-hotels__text-sum {
+  font-size: 16px;
+  font-style: italic;
+  color: #f76f8d;
+}
+.description-hotels__button {
+  position: absolute;
+  left: 43%;
+  margin-top: 40px;
+  width: 250px;
+  height: 50px;
+  background-color: #f76f8d;
+  color: #FFF;
+  box-shadow: 0px 0px 30px 0px rgba(247, 111, 141, 0.1);
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-border-radius: 60px;
+  border-radius: 60px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.description-hotels__button a {
+  color: #FFF;
+  text-decoration: none;
+}
+.information {
+  width: 100%;
+  background: #fdf8f9;
+}
+.information-card {
+  width: 1046px;
+  margin: auto;
+  padding-top: 135px;
+  padding-bottom: 65px;
+}
+.information-card__text {
+  padding-top: 25px;
+  padding-left: 35px;
+  padding-right: 35px;
+  height: 330px;
+  background: #fff;
+}
+.information-card__text h3 {
+  color: #f76f8d;
+  font-weight: bold;
+  padding-bottom: 40px;
+}
+.information-card__text-list {
+  list-style-type: none;
+  padding: 0;
+  color: #666;
+  font-size: 14px;
+  line-height: 30px;
+}
+.information-card__text-paragraph {
+  color: #666;
+  font-size: 14px;
+}
+.information-card__text-list--pink {
+  color: #F76F8D;
+}
+.information-card__text-list--pink li:before {
+  content: "- ";
+}
+.footer {
+  width: 100%;
+}
+.footer-information {
+  width: 1046px;
+  margin: auto;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+.footer-information__title-pink {
+  font-family: 'Lobster', cursive;
+  color: #F76F8D;
+  font-size: 40px;
+  padding-top: 70px;
+}
+.footer-information__title {
+  color: #F76F8D;
+  font-size: 18px;
+  padding-bottom: 25px;
+}
+.footer-information__list {
+  list-style-type: none;
+  padding: 0;
+  color: #666;
+  font-size: 14px;
+  line-height: 35px;
+}
+.copyright {
+  border-top: 3px solid #cccccc;
+}
+.copyright-text {
+  height: 75px;
+  color: #666;
+  font-size: 14px;
+  padding-top: 30px;
+}
+.social-icons {
+  height: 75px;
+  text-align: right;
+  padding-top: 20px;
+  font-size: 30px;
+}
+.fa {
+  color: #666;
+}
